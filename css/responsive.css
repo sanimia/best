@@ -1,0 +1,734 @@
+
+@media only screen and (max-width: 778px){
+	.button button {
+    width: 95px;
+    font-size: 13px;
+	}
+	p.abouttext {
+    padding: 10px;
+}
+
+.aboutdiv {
+	background-size:100%;
+}
+.progressdiv {
+	background-size:100%;
+}
+.servdivone {
+	 flex-basis: 24%;
+    margin: 0px 5px;
+}
+.servdivtwo {
+	 flex-basis: 24%;
+    margin: 0px 5px;
+}
+.servdivthree {
+	 flex-basis: 24%;
+    margin: 0px 5px;
+}
+.servdivfour {
+	 flex-basis: 24%;
+    margin: 0px 5px;
+}
+.servdivone .servlogo img {
+    height: 76px;
+}
+.servdivtwo .servlogotwo img {
+    height: 76px;
+}
+.servdivthree .servlogothree img {
+    height: 76px;
+}
+.servdivfour .servlogofour img {
+    height: 76px;
+}
+.servdivthreetext h1 {
+    font-size: 25px;
+}
+.teamdivone {
+    flex-basis: 24%;
+    margin: 0px 5px;
+}
+.teamdivtwo {
+    flex-basis: 24%;
+    margin: 0px 5px;
+}
+.teamdivthree {
+    flex-basis: 24%;
+    margin: 0px 5px;
+}
+.teamdivfour {
+    flex-basis: 24%;
+    margin: 0px 5px;
+}
+.teamdivthreetext h1 {
+    font-size: 25px;
+}
+.submit {
+    width: 14%;
+}
+}
+
+
+
+@media only screen and (max-width: 768px){
+	.abouttext {
+    padding: 18px;
+    font-size: 17px; 
+}
+.servdivone .servlogo img {
+    height: 114px;
+    width: 74%;
+}
+.servdivtwo .servlogotwo img {
+    height: 114px;
+    width: 74%;
+}
+.servdivthree .servlogothree img {
+    height: 114px;
+    width: 74%;
+}
+.servdivfour .servlogofour img {
+    
+    height: 138px;
+    width: 90%;
+}
+.servdivonetext h1 {
+    font-size: 24px;
+}
+.servdivtwotext h1 {
+    font-size: 24px;
+}
+.servdivthreetext h1 {
+    font-size: 24px;
+}
+.servdivfourtext h1 {
+    font-size: 24px;
+}
+.teamdivone .teamlogo img {
+    height: 115px;
+    width: 75%;
+}
+.teamdivtwo .teamlogotwo img {
+    height: 115px;
+    width: 75%;
+}
+.teamdivthree .teamlogothree img {
+    height: 118px;
+    width: 100%;
+}
+.teamdivfour .teamlogofour img {
+    height: 115px;
+    width: 75%;
+} 
+.teamdivonetext h1 {
+    font-size: 24px;
+}
+.teamdivtwotext h1 {
+    font-size: 24px;
+}
+.teamdivthreetext h1 {
+    font-size: 24px;
+}
+.teamdivfourtext h1 {
+    font-size: 24px;
+}
+.submit {
+    width: 15%;
+}
+}
+@media only screen and (max-width: 744px){
+	.nav {
+    display: flex;
+    height: 175px;
+    justify-content: center;
+}
+
+.logo {
+    display: flex;
+    height: 70px;
+    flex-basis: 20%;
+    align-items: center;
+    justify-content: center;
+}
+.menu {
+    flex-basis: 30%;
+	display:block;
+	height:0px;
+}
+
+.menu ul {
+    flex-direction: column;
+}
+.menu ul li {
+    display: flex;
+    justify-content: center;
+    padding: 2px;
+}
+.menu ul li a {
+    font-size: 20px;
+    text-decoration: none;
+	padding: 0px 10px;
+}
+.aboutdiv {
+    background-size: 100%;
+}
+	
+}
+@media only screen and (max-width: 662px){
+	.aboutdiv {
+		height:930px;
+	}
+	.myimage {
+		    flex-basis: 100%;
+
+	}
+	.aboutme {
+		flex-basis: 100%;
+	}
+.services {
+    height: 1015px;
+}
+	.servdiv {
+    flex-direction:row;
+    display: block; 
+    height: 0px; 
+    width: 100%; 
+}
+.servdivone {
+    float: left;
+    width: 45%;
+    margin: 0px;
+    margin: 14px;
+}
+
+.servdivone .servlogo img {
+    height: 125px;
+    width: 45%;
+}
+.servdivtwo {
+    float: right;
+    width: 45%;
+    margin: 14px;
+}
+.servdivtwo .servlogotwo img {
+    height: 125px;
+    width: 45%;
+}
+.servdivthree {
+    float: left;
+    margin: 14px;
+    width: 45%;
+}
+.servdivthree .servlogothree img {
+    height: 125px;
+    width: 45%;
+}
+.servdivfour {
+    margin: 14px;
+    float: right;
+    width: 45%;
+}
+.servdivfour .servlogofour img {
+    height: 125px;
+    width: 45%;
+}
+	.myteam {
+    height: 1014px;
+}
+	.teamdiv {
+    flex-direction:row;
+    display: block; 
+    height: 0px; 
+    width: 100%; 
+}
+.teamdivone {
+    float: left;
+    width: 45%;
+    margin: 0px;
+    margin: 14px;
+}
+
+.teamdivone .teamlogo img {
+    height: 125px;
+    width: 45%;
+}
+.teamdivtwo {
+    float: right;
+    width: 45%;
+    margin: 14px;
+}
+.teamdivtwo .teamlogotwo img {
+    height: 125px;
+    width: 45%;
+}
+.teamdivthree {
+    float: left;
+    margin: 14px;
+    width: 45%;
+}
+.teamdivthree .teamlogothree img {
+    height: 125px;
+    width: 70%;
+}
+.teamdivfour {
+    margin: 14px;
+    float: right;
+    width: 45%;
+}
+.teamdivfour .teamlogofour img {
+    height: 125px;
+    width: 45%;
+}
+input.name {
+    font-size: 20px;
+}
+input.phone {
+    font-size: 20px;
+}
+input.email {
+    font-size: 20px;
+}
+}
+
+@media only screen and (max-width: 560px){
+	.nav {
+    margin-left: 43px;
+}
+.myimage img {
+    width: 70%;
+    box-shadow:none;
+}	
+.lineargradient {
+	clip-path: polygon(100% 0%,100% 57%,50% 31%,0% 57%,0% 0%);
+}
+.aboutdiv {
+    height: 920px;
+}
+.services {
+    height: 1170px;
+}
+.servdivone {
+    height: 230px;
+    width: 96%;
+    margin: 10px;
+}
+.servdivone .servlogo img {
+    width: 20%;
+    height: 100px;
+}
+.servdivonetext p {
+    padding: 15px;
+}
+	.servdivtwo {
+    height: 230px;
+    width: 96%;
+    margin: 10px;
+}
+.servdivtwo .servlogotwo img{
+   width: 20%;
+    height: 100px;
+}
+.servdivtwotext p {
+    padding: 15px;
+}
+	.servdivthree{
+   height: 230px;
+    width: 96%;
+    margin: 10px;
+}
+.servdivthree .servlogothree img{
+   width: 20%;
+    height: 100px;
+}
+.servdivthreetext p {
+    padding: 15px;
+}
+	.servdivfour{
+    height: 230px;
+    width: 96%;
+    margin: 10px;
+}
+.servdivfour .servlogofour img{
+    width: 20%;
+    height: 100px;
+}
+.servdivfourtexttext p {
+    padding: 15px;
+}
+.myteam {
+    height: 1160px;
+}
+.teamdivone {
+    height: 230px;
+    width: 96%;
+    margin: 10px;
+}
+.teamdivone .teamlogo img {
+    height: 125px;
+    width: 30%;
+}
+.teamdivtwo {
+    height: 230px;
+    width: 96%;
+    margin: 10px;
+}
+.teamdivtwo .teamlogotwo img {
+    height: 125px;
+    width: 30%;
+}
+.teamdivthree {
+    height: 230px;
+    width: 96%;
+    margin: 10px;
+}
+.teamdivthree .teamlogothree img {
+    height: 125px;
+    width: 42%;
+}
+.teamdivfour {
+    height: 230px;
+    width: 96%;
+    margin: 10px;
+}
+.teamdivfour .teamlogofour img {
+    height: 125px;
+    width: 30%;
+}
+input.name {
+	width:45%;
+}
+input.phone  {
+	width:45%;
+}
+input.email {
+	width:45%;
+}
+.submit {
+    width: 25%;
+}
+}
+@media only screen and (max-width: 548px){
+	.settingcontent {
+    width: 144px;
+	}
+	.musicone {
+    width: 26px;
+	}
+	.musictwo {
+    width: 26px;
+	}
+	.musicthree {
+    width: 26px;
+	}
+}
+@media only screen and (max-width: 480px){
+	.nav {
+    margin-left: 0px; 
+}
+.logo {
+    display: none;
+}
+.button {
+    display: none;
+}
+.setting {
+	top:36px;
+}
+.settingcontent {
+	top: 86px;
+    right: 0px;
+}
+.pause {
+	left:0;
+    top: 36px;
+}
+.aboutdiv {
+    background-size: 100%;
+}
+.abouttext {
+    padding: 6px;
+}
+.myimage {
+    height: 412px;
+}
+.myimage img {
+    width: 54%;
+}
+input.name {
+	font-size:20px;
+}
+input.phone {
+	font-size:20px;
+}
+input.email  {
+	font-size:20px;
+}
+}
+@media only screen and (max-width: 448px){
+	.headerdiv {
+    clip-path: polygon(100% 0%,100% 80%,48% 100%,0% 80%,0% 0%);
+}
+	.abouttext {
+    padding: 42px;
+}
+	.servdivone .servlogo img {
+    height: 83px;
+	}
+	.servdivonetext p {
+    padding: 8px;
+	}
+	.servdivtwo .servlogotwo img {
+    height: 83px;
+	}
+	.servdivtwotext p {
+    padding: 8px;
+	}
+	.servdivthree .servlogothree img {
+    height: 83px;
+	}
+	.servdivthreetext p {
+    padding: 8px;
+	}
+	.servdivfour .servlogofour img {
+    height: 83px;
+	}
+	.servdivfourtext p {
+    padding: 8px;
+	}
+	footer {
+		height: 450px;
+	}
+	.footone {
+		width:100%;
+		clip-path: polygon(100% 0%,85% 100%,15% 100%,0% 0%);
+	}
+	.footwo {
+		width:100%;
+		clip-path: polygon(85% 0%,100% 100%,0% 100%,15% 0%);
+	}
+}
+@media only screen and (max-width: 390px){
+	.settingcontent {
+    width: 122px;
+}
+.close {
+    width: 60px;
+}
+	.abouttext {
+    padding: 10px;
+}
+}
+@media only screen and (max-width: 362px){
+	.servdivone {
+    width: 100%;
+    margin: 10px 0px;
+}
+	.servdivtwo {
+    width: 100%;
+    margin: 10px 0px;
+}
+	.servdivthree {
+    width: 100%;
+    margin: 10px 0px;
+}
+	.servdivfour {
+    width: 100%;
+    margin: 10px 0px;
+}
+	.servdivone .servlogo img {
+    height: 66px;
+}
+	.servdivtwo .servlogotwo img {
+    height: 66px;
+}
+	.servdivthree .servlogothree img {
+    height: 66px;
+}
+	.servdivfour .servlogofour img {
+    height: 66px;
+}
+	.servdivonetext p {
+    padding: 8px;
+}
+.teamdivone {
+    width: 100%;
+    margin: 10px 0px;
+}
+.teamdivtwo {
+    width: 100%;
+    margin: 10px 0px;
+}
+.teamdivthree {
+    width: 100%;
+    margin: 10px 0px;
+}
+.teamdivfour {
+    width: 100%;
+    margin: 10px 0px;
+}
+.teamdivone .teamlogo img {
+    height: 108px;
+}
+.teamdivtwo .teamlogotwo img {
+    height: 108px;
+}
+.teamdivthree .teamlogothree img {
+    height: 108px;
+}
+.teamdivfour .teamlogofour img {
+    height: 108px;
+}
+	
+}
+@media only screen and (max-width: 330px){
+p.musictext {
+    display: none;
+}
+p {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.musicone {
+    width: 100px;
+}
+.musictwo {
+    width: 100px;
+}
+.musicthree {
+    width: 100px;
+}
+.settingcontent {
+    width: 114px;
+	height:200px;
+}
+.icon img {
+    margin: 5px;
+}
+	.servdivone {
+    height: 230px;
+    width: 100%;
+    margin: 10px 0px;
+}
+	.servdivone .servlogo img {
+    height: 61px;
+}
+.servdivtwo {
+    height: 230px;
+    width: 100%;
+    margin: 10px 0px;
+}
+.servdivtwo .servlogotwo img {
+    height: 61px;
+}
+.servdivthree {
+    height: 230px;
+    width: 100%;
+    margin: 10px 0px;
+}
+.servdivthree .servlogothree img {
+    height: 61px;
+}
+.servdivfour {
+    height: 230px;
+    width: 100%;
+    margin: 10px 0px;
+}
+.servdivfour .servlogofour img {
+    height: 61px;
+}
+	.submit {
+		font-size:16px;
+	}
+	.teamdivone {
+    height: 230px;
+    width: 100%;
+    margin: 10px 0px;
+}
+.teamdivone .teamlogo img {
+    height: 96px;
+    width: 30%;
+}
+	.teamdivtwo {
+    height: 230px;
+    width: 100%;
+    margin: 10px 0px;
+}
+.teamdivtwo .teamlogotwo img {
+    height: 96px;
+    width: 30%;
+}
+	.teamdivthree {
+    height: 230px;
+    width: 100%;
+    margin: 10px 0px;
+}
+ .teamdivthree .teamlogothree img {
+    height: 115px;
+    width: 60%;
+}
+	.teamdivfour {
+    height: 230px;
+    width: 100%;
+    margin: 10px 0px;
+}
+ .teamdivfour .teamlogofour img {
+    height: 115px;
+    width: 45%;
+}
+}
+@media only screen and (max-width: 300px){
+	.myname {
+    font-size: 20px;
+	}
+	.myself {
+    font-size: 16px;
+	}
+	.myvillage {
+		font-size: 16px;
+	}
+	.icon img {
+    margin: 8px;
+}
+.aboutdiv {
+    height: 970px;
+}
+.abouttext {
+    padding: 0px;
+}
+.setting {
+    top: 15px;
+}
+.settingcontent {
+    top: 65px;
+}
+.settingcontent {
+    height: 200px;
+}
+p.musictext {
+    display: none;
+}
+p {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.musicone {
+    width: 100px;
+}
+.musictwo {
+    width: 100px;
+}
+.musicthree {
+    width: 100px;
+}
+.pause {
+    top: 14px;
+}
+}
+	
+
+
+
+

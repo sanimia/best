@@ -1,0 +1,921 @@
+@font-face{
+	font-family:one;
+	src:url(../font/2.ttf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: one;
+	box-sizing: border-box;
+    text-align: justify;
+    font-weight: 800;	
+}
+#bodycolor {
+    background-color:#984f04;
+}
+.headerdiv {
+    height: 740px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    background-size:100%;
+    background-attachment:fixed;
+    background-repeat:no-repeat;
+    clip-path:polygon(100% 0%,100% 60%,50% 100%,0% 60%,0% 0%);
+    position:relative;
+    z-index:1;
+}
+.lineargradient {
+	top:0;
+    height: 740px;
+    width: 100%;
+    background-image: linear-gradient(60deg, #ff0000f2, #ffff0061);
+	background-size:100%;
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+    clip-path: polygon(100% 0%,100% 60%,50% 18%,0% 60%,0% 0%);
+	position:absolute;
+	z-index:-1;
+}
+.nav{
+	display: flex;
+	height: 70px;
+}
+.logo{
+	text-align: center;
+	display: flex;
+	height:70px;
+	flex-basis: 20%;
+	align-items: center;
+	justify-content: center;
+}
+
+.menu{
+	justify-content: center;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	height:70px;
+	flex-basis: 60%;
+}
+.menu ul{
+	flex-basis: 100%;
+	display: flex;
+	justify-content: space-between;
+	list-style:none;
+	text-align: center;
+	align-items: center;
+}
+.menu ul li{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	padding: 8px;
+}
+.menu ul li a{	
+	display: flex;	
+	font-size:25px;
+	text-decoration:none;	
+	color:black;	
+	justify-content: center;	
+	align-items: center;	
+	text-align: center;	
+	padding: 10px;
+}
+.menu ul li a:hover{
+	border-bottom:2px solid black;
+	transition:.7s;
+}
+.button{
+	text-align: center;
+	display: flex;
+	height:70px;
+	flex-basis: 20%;
+	justify-content: center;
+	align-items: center;
+}
+.button button {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 30px;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.1);
+    box-shadow: inset 5px -1px 0px 0px #FFEB3B;
+}
+.button button:hover{
+	background-color:#f5f51f;
+	transition:.5s;
+}
+.setting {
+    height: 50px;
+    width: 50px;
+    background-image: linear-gradient(10deg, #ff000024, #ffff004f),url(../icon/7.png);
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    position: fixed;
+    top: 100px;
+    right: 0px;
+	cursor:pointer;
+}
+.settingcontent {
+    height: 180px;
+    width: 180px;
+    background-image: linear-gradient(10deg, #ff000024, #ffff004f);
+    position: absolute;
+    position: fixed;
+    top: 100px;
+    right: 46px;
+	padding:5px;
+	display:none;
+}
+
+.musicone {
+    margin-top: 5px;
+    height: 17px;
+    width: 92px;
+    float: right;
+	color:black;
+	text-align:center;
+	font-size:10px;
+	cursor:pointer;
+    border: 1px solid white;
+    background-image: linear-gradient(10deg, #ff0000b3, #ffff00);
+    border-radius: 50px;
+}
+.musictwo {
+    margin-top: 5px;
+    height: 17px;
+    width: 92px;
+    float: right;
+	color:black;
+	cursor:pointer;
+	text-align:center;
+	font-size:10px;
+    border: 1px solid white;
+    background-image: linear-gradient(10deg, #ff0000b3, #ffff00);
+    border-radius: 50px;
+}
+.musicthree {
+    margin-top: 5px;
+    height: 17px;
+    width: 80px;
+    float: right;
+	color:black;
+	cursor:pointer;
+	text-align:center;
+	font-size:10px;
+    border: 1px solid white;
+    background-image: linear-gradient(10deg, #ff0000b3, #ffff00);
+    border-radius: 50px;
+}
+.color {
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+    margin: 4px;
+    width: 30px;
+    border: 1px solid white;
+    background-image: url(../img/21.jpg);
+    background-size: 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.cologra {
+    height: 30px;
+    width: 30px;
+    float: left;
+    margin-left: 5px;
+    border: 1px solid white;
+    background-image:url(../img/11.jpg);
+	background-size:30px;
+    border-radius: 50px;
+	cursor:pointer;
+}
+.close {
+    height: 30px;
+    width: 94px;
+    float: right;
+	color:black;
+	text-align:center;
+    margin-left: 5px;
+    border: 1px solid white;
+    background-image: linear-gradient(10deg, #ff0000b3, #ffff00);
+    border-radius: 50px;
+	cursor:pointer;
+}
+.pause {
+    background-image: linear-gradient(10deg, #ff0000ab, #ffff00);
+    padding: 5px;
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    top: 159px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.myname{
+	display: flex;
+	font-size: 27px;
+	justify-content: center;
+	align-items: center;
+	text-align:center;
+	margin: 20px;
+}
+.myself{
+	display: flex;
+	text-align:center;
+	align-items: center;
+	justify-content: center;
+	font-size:20px;
+	margin:20px;
+}
+.myself span:after{
+	margin-left:10px;
+	content:'Responsive webdesigner';
+	animation:sani 7s linear infinite;
+}
+@keyframes sani{
+	20%{
+		content:'';
+		
+	}
+	40%{
+		content:'Responsive webdesigner';
+		color:blue;
+	}
+	60%{
+		content:'';
+		
+	}
+	80%{
+		content:'Responsive webdesigner';
+	}
+	100%{
+		content:'';
+	}
+}
+.myvillage{
+	display: flex;
+	text-align:center;
+	font-size:20px;
+	margin:20px;
+	justify-content: center;
+	align-items: center;
+}
+.cv{
+	display: flex;
+	text-align:center;
+	font-size:15px;
+	margin:20px;
+	justify-content: center;
+	align-items: center;
+}
+.cv button{
+	cursor: pointer;
+	background-color: rgba(0,0,0,0.1);
+	box-shadow: inset 5px -1px 0px 0px #FFEB3B;
+	margin:10px;
+	font-size:15px;
+	padding:7px;
+}
+.cv button:hover{
+	background-color:#f5f51f;
+	transition:.5s;
+}
+.cv button a{
+	text-decoration:none;
+	color:black;
+}
+.icon{
+	display: flex;
+	text-align:center;
+	justify-content: center;
+	align-items: center;
+}
+.icon img{
+	height:30px;
+	width:30px;
+	cursor:pointer;
+	margin:20px;
+}
+.icon img:hover{
+	 transform: rotate(30deg);
+}
+.aboutdiv {
+    flex-wrap: wrap;
+    display: flex;
+    height: 600px;
+    flex-basis: 100%;
+    background-image: linear-gradient(10deg, #ff000063, #ffff00ba),url(../img/9.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.myimage{
+	display: flex;
+	height: 600px;
+	flex-basis: 50%;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+.myimage img {
+    height: 40%;
+    width: 50%;
+    box-shadow: 10px 8px #aaa024;
+}
+.progressdiv {
+    height: 660px;
+    width: 100%;
+    background-image: linear-gradient(10deg, #ff000021, #ffff00),url(../img/12.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.progressdiv .myskill{
+	text-align: center;
+    font-size: 40px;
+	padding: 20px;
+} 
+
+#progressbar{
+	height:100px;
+	width:100%;
+}
+#prtext{
+	
+    height: 50px;
+    width: 100%;
+}
+#prtext p{
+	text-align:center;
+	line-height:50px;
+	font-size:25px;
+}
+#proone {
+    box-shadow: inset -6px 0px 20px 0px;
+    height: 26px;
+    width: 75%;
+    background-color: #b9b0b096;
+    border-radius: 30px;
+    margin: auto;
+}
+
+#inside {
+    height: 26px;
+    width: 90%;
+    background-image: linear-gradient(10deg, #ff0000, #ffff00);
+    border-radius: 30px;
+    animation: html 20s linear infinite;
+}
+@keyframes html{
+	0%{
+		width:0%;
+	}
+	40%{
+		width:90%
+	}
+	100%{
+		width:90%
+	}
+}
+#inside p{
+	text-align:center;
+}
+#insid{
+	height: 26px;
+    width: 98%;
+	background-image: linear-gradient(10deg, #ff0000, #ffff00);
+	border-radius:30px;
+	animation:css 20s linear infinite;
+	
+}
+@keyframes css{
+	0%{
+		width:0%;
+	}
+	40%{
+		width:98%
+	}
+	100%{
+		width:98%
+	}
+}
+#insid p{
+	text-align:center;
+}
+#insi{
+	height: 26px;
+    width: 100%;
+	background-image: linear-gradient(10deg, #ff0000, #ffff00);
+	border-radius:30px;
+	animation:java 20s linear infinite;
+}
+@keyframes java{
+	0%{
+		width:0%;
+	}
+	40%{
+		width:100%
+	}
+	100%{
+		width:100%
+	}
+}
+#insi p{
+	text-align:center;
+}
+#ins{
+	height: 26px;
+    width: 95%;
+	background-image: linear-gradient(10deg, #ff0000, #ffff00);
+	border-radius:30px;
+	animation:framework 20s linear infinite;	
+}
+@keyframes framework{
+	0%{
+		width:0%;
+	}
+	40%{
+		width:95%
+	}
+	100%{
+		width:95%
+	}
+}
+#ins p{
+	text-align:center;
+}
+
+.aboutme {
+    height: 600px;
+    flex-basis: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.aboutmyname {
+    display: flex;
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.abouttext{
+	padding: 24px;
+	display: flex;
+	font-size: 20px;
+	color:black;
+	text-align: justify;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+.services {
+    flex-direction: column;
+    display: flex;
+    height: 660px;
+    flex-basis: 100%;
+    background-image: linear-gradient(10deg, #ff000021, #ffff00),url(../img/8.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.sertext{
+	display: flex;
+	height:150px;
+	width:100%;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+.serv{
+	text-align:center;
+	font-size:40px;
+}
+.servdiv{
+	flex-direction: row;
+	display: flex;
+	height: 400px;
+	flex-basis: 100%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.servdivone{
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	flex-direction: column;
+	display: flex;
+	height: 400px;
+	flex-basis: 22%;
+	background-image: linear-gradient(10deg, #ff000059, #ffff00a6);
+	margin:0px 24px;
+}
+.servdivone .servlogo{
+	text-align: center;
+	display: flex;
+	height:150px;
+	width:100%;
+	justify-content: center;
+	align-items: center;
+}
+.servdivone .servlogo img {
+    height: 130px;
+    width: 44%;
+}
+.servdivonetext h1{
+	display: flex;
+	text-align:center;
+	justify-content: center;
+	align-items: center;
+}
+.servdivonetext p{
+	padding:10px;
+}
+.servdivtwo{
+	display: flex;
+	height: 400px;
+	flex-basis: 22%;
+	background-image: linear-gradient(10deg, #ff000059, #ffff00a6);
+	margin:0px 15px;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.servdivtwo .servlogotwo{
+	text-align: center;
+	display: flex;
+	height: 150px;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	}
+.servdivtwo .servlogotwo img {
+    height: 130px;
+    width: 44%;
+}
+.servdivtwotext h1{
+	display: flex;
+	text-align:center;
+	justify-content: center;
+	align-items: center;
+}
+.servdivtwotext p{
+	padding:10px;
+}
+.servdivthree{
+	display: flex;
+	height: 400px;
+	flex-basis: 22%;
+	background-image: linear-gradient(10deg, #ff000059, #ffff00a6);
+	margin:0px 15px;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.servdivthree .servlogothree{
+	height:150px;
+	width:100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.servdivthree .servlogothree img {
+    height: 130px;
+    width: 44%;
+}
+.servdivthreetext h1{
+	display: flex;
+	text-align:center;
+	justify-content: center;
+	align-items: center;
+}
+.servdivthreetext p{
+	padding:10px;
+}
+.servdivfour{
+	display: flex;
+	height: 400px;
+	flex-basis: 22%;
+	background-image: linear-gradient(10deg, #ff000059, #ffff00a6);
+	margin:0px 15px;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.servdivfour .servlogofour {
+    display: flex;
+    height: 150px;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+.servdivfour .servlogofour img {
+    height: 130px;
+    width: 44%;
+}
+.servdivfourtext h1{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.servdivfourtext p{
+	padding:10px;
+}
+.myteam {
+    flex-direction: column;
+    display: flex;
+    height: 660px;
+    flex-basis: 100%;
+    background-image: linear-gradient(10deg, #ff000021, #ffff00),url(../img/13.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+.textdiv{
+	display: flex;
+	height:150px;
+	width:100%;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+.texth{
+	text-align:center;
+	font-size:40px;
+}
+.teamdiv{
+	flex-direction: row;
+	display: flex;
+	height: 400px;
+	flex-basis: 100%;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+.teamdivone{
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	flex-direction: column;
+	display: flex;
+	height: 400px;
+	flex-basis: 22%;
+	background-image: linear-gradient(10deg, #ff000059, #ffff00a6);
+	margin:0px 24px;
+}
+.teamdivone .teamlogo{
+	text-align: center;
+	display: flex;
+	height:150px;
+	width:100%;
+	justify-content: center;
+	align-items: center;
+}
+.teamdivone .teamlogo img {
+    height: 130px;
+    width: 44%;
+}
+.teamdivonetext h1{
+	display: flex;
+	text-align:center;
+	justify-content: center;
+	align-items: center;
+}
+.teamdivonetext p{
+	padding:10px;
+}
+.teamdivtwo{
+	display: flex;
+	height: 400px;
+	flex-basis: 22%;
+	background-image: linear-gradient(10deg, #ff000059, #ffff00a6);
+	margin:0px 15px;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.teamdivtwo .teamlogotwo{
+	text-align: center;
+	display: flex;
+	height: 150px;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	}
+.teamdivtwo .teamlogotwo img {
+    height: 130px;
+    width: 44%;
+}
+.teamdivtwotext h1{
+	display: flex;
+	text-align:center;
+	justify-content: center;
+	align-items: center;
+}
+.teamdivtwotext p{
+	padding:10px;
+}
+.teamdivthree{
+	display: flex;
+	height: 400px;
+	flex-basis: 22%;
+	background-image: linear-gradient(10deg, #ff000059, #ffff00a6);
+	margin:0px 15px;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.teamdivthree .teamlogothree{
+	height:150px;
+	width:100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+.teamdivthree .teamlogothree img {
+    height: 130px;
+    width: 70%;
+}
+.teamdivthreetext h1{
+	display: flex;
+	text-align:center;
+	justify-content: center;
+	align-items: center;
+}
+.teamdivthreetext p{
+	padding:10px;
+}
+.teamdivfour{
+	display: flex;
+	height: 400px;
+	flex-basis: 22%;
+	background-image: linear-gradient(10deg, #ff000059, #ffff00a6);
+	margin:0px 15px;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+}
+.teamdivfour .teamlogofour{
+	height:150px;
+	justify-content: center;
+	width:100%;
+	align-items: center;
+	text-align: center;
+}
+.teamdivfour .teamlogofour img {
+    align-items: center;
+    height: 130px;
+    width: 44%;
+    /* padding: 10px; */
+    margin: auto;
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+.teamdivfourtext h1{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+.teamdivfourtext p{
+	padding:10px;
+}
+.contract{
+	flex-direction: column;
+    display: flex;
+    height: 660px;
+    flex-basis: 100%;
+    background-image: linear-gradient(10deg, #ff000021, #ffff00),url(../img/13.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+
+.contract h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    margin: 30px;
+}
+
+.from {
+    display: flex;
+    height: 388px;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input.name {
+    margin: 25px;
+    height: 45px;
+    width: 30%;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 10px;
+}
+input.phone {
+    margin: 25px;
+    height: 45px;
+    width: 30%;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 10px;
+}
+input.email {
+    margin: 25px;
+    height: 45px;
+    width: 30%;
+    border-radius: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    padding: 10px;
+}
+.submit {
+    height: 45px;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 26px;
+}
+footer {
+	background-image: linear-gradient(10deg, #ff000021, #ffff00),url(../img/13.png);
+    height: 215px;
+    
+}
+
+.footone {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 50%;
+    background-image: linear-gradient(-60deg, #ff000087, #ffff004f);
+    clip-path: polygon(100% 0%,86% 100%,0% 100%,0% 0%);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footwo {
+    display: flex;
+    height: 200px;
+    flex-direction: column;
+    width: 50%;
+    float: right;
+    background-image: linear-gradient(-60deg, #ff000087, #ffff004f);
+    clip-path: polygon(100% 0%,100% 100%,14% 100%,0% 0%);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+h1.copy {
+	background-image: linear-gradient(10deg, #ff000021, #ffff00),url(../img/13.png);
+    text-align: center;
+
+}
+
+
+
